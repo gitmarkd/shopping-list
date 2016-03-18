@@ -1,0 +1,25 @@
+body {
+	font-family: 'Courgette', cursive;
+}
+#wrapper {
+	background-image: url('../images/shopping2.png');
+	/*background-repeat: no-repeat;*/
+	/*background-size: 100% 100%;*/
+}
+
+h1 {
+	font-family: 'Courgette', cursive;
+}
+
+.list-group-item.borderless {
+	border: none;
+}
+.list-group-item img {
+	width: 52px;
+	height: 52px;
+}
+
+.btn-primary img {
+	/*width: 20px;*/
+	height: 20px;
+}
