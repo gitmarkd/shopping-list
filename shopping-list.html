@@ -46,7 +46,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section alert-wrap">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -62,7 +62,7 @@
                         <form role="form">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input type="text" class="form-control text-center add-item" placeholder="click image to add item">
+                                    <input type="text" name="item-name" class="form-control text-center add-item" placeholder="click image to add item">
                                     <span class="input-group-btn">
                                         <a class="btn btn-primary" type="submit">
                                             <img src="images\Shopping_cart_icon.svg.png">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section shop-list">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -84,37 +84,21 @@
                                 <tr>
                                     <th class="text-center">X</th>
                                     <th class="text-center">Item</th>
-                                    <th style="width: 50px" class="text-center">X</th>
+                                    <th class="text-center set-width">X</th>
                                 </tr>
                             </thead>
                             <tbody>
+<!--
                                 <tr>
-                                    <td class="text-center" style="width: 50px">
-                                        <input type="checkbox">
-                                    </td>
-                                    <td class="text-center">apples</td>
-                                    <td style="width: 50px">
-                                        <button class="text-center">X</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center" style="width: 50px">
-                                        <input type="checkbox">
-                                    </td>
-                                    <td class="text-center">oranges</td>
-                                    <td style="width: 50px">
-                                        <button class="text-center">X</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center" style="width: 50px">
-                                        <input type="checkbox">
-                                    </td>
-                                    <td class="text-center">bananas</td>
-                                    <td style="width: 50px">
-                                        <button class="text-center">X</button>
-                                    </td>
-                                </tr>
+    <td class="text-center set-width">
+        <input type="checkbox">
+    </td>
+    <td class="text-center item-listed"></td>
+    <td class="set-width">
+        <button class="text-center">X</button>
+    </td>
+</tr>
+-->
                             </tbody>
                         </table>
                     </div>
@@ -135,7 +119,7 @@
                     <div class="col-sm-6">
                         <p class="text-info text-right">
                             <br>
-<br>
+                            <br>
                         </p>
                         <div class="row">
                             <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">

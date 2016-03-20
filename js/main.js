@@ -4,15 +4,29 @@ RE-USABLE FUNCTIONS
 
 /* add items to the input box, by clicking on the item */
 function addToInput(item) {
-    //    alert('item added to input: ' + item);
     $('.add-item').val(item);
 }
 
 /* add items to the list, by clicking on the cart */
-function addToList() {}
+function addToList(item) {
+    $('.shop-list tbody').append(
+        '<tr>' +
+        '<td class="text-center set-width">' +
+        '<input type="checkbox" class="checkbox"></td>' +
+        '<td class="text-center item-listed">' +
+        item +
+        '</td>' +
+        '<td class="set-width">' +
+        '<button class = "text-center">X</button>' +
+        '</td>' +
+        '</tr>'
+    );
+}
 
 /* select items to cross out */
-function checkItem() {}
+function checkItem() {
+    alert('you checked the check-box!');
+}
 
 /* remove item from list by clicking the 'X' button */
 function removeItem() {}
@@ -26,9 +40,12 @@ INSIDE $(document).ready(): functions that target elements that were created dur
 
 $(document).ready(function () {
 
-    /* clicking the item image activates the addToList() function */
+    /* clicking the cart invokes the addToList() function */
+    $('form a').on('click', function () {
+        addToList($('input').val());
+        $('.shop-list').show();
+    });
 
-    /* clicking the item image activates the addToList() function */
 });
 
 /* ======================================
@@ -44,3 +61,5 @@ KEYBOARD EVENT HANDLERS
 /* ======================================
 OUTSIDE $(document).ready(): functions that target dynamically created elements that were created after load time
 =========================================*/
+
+$(document).on('check', '.checkbox', checkItem);
