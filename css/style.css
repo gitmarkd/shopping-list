@@ -73,12 +73,16 @@ Content styles (Main Module)
     display: none;
 }
 
-.shop-list .show-it {
-    display: block;
+.hide-shop-list {
+    display: none;
 }
 
 .set-width {
     width: 5%;
+}
+
+.strike {
+    text-decoration: line-through;
 }
 
 
