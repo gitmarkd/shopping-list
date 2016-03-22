@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style-static.css">
+</head>
+
+<body>
+    <main id="wrapper">
+        <header class="container">
+            <div class="heading">
+                <h1 class="text-center text-primary">Shopping List</h1>
+                <hr>
+            </div>
+        </header>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-group list-inline img-wrap">
+                        <li class="list-group-item borderless">
+                            <img src="images\11293-illustration-of-an-apple-ve.svg" onclick="addToInput('apple')">
+                        </li>
+                        <li class="list-group-item borderless">
+                            <img src="images\11411-illustration-of-a-pear-ve.svg" onclick="addToInput('pear')">
+                        </li>
+                        <li class="list-group-item borderless">
+                            <img src="images\11418-illustration-of-a-bunch-of-grapes-ve.svg" onclick="addToInput('grapes')">
+                        </li>
+                        <li class="list-group-item borderless">
+                            <img src="images\15908-illustration-of-cherries-ve.svg" onclick="addToInput('cherries')">
+                        </li>
+                        <li class="list-group-item borderless">
+                            <img src="images\15912-illustration-of-a-banana-ve.svg" onclick="addToInput('banana')">
+                        </li>
+                        <li class="list-group-item borderless">
+                            <img src="images\15911-illustration-of-a-lemon-ve.svg" onclick="addToInput('lemon')">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="item-name" class="form-control text-center" placeholder="click image to add item">
+                                    <span class="input-group-btn">
+                                        <a class="btn btn-primary" type="submit">
+                                            <img src="images\Shopping_cart_icon.svg.png">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section shop-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="text-center set-width">
+                                        <input type="checkbox">
+                                    </th>
+                                    <th id="itemHead" class="text-center">Item: orange added successfully!</th>
+                                    <th class="text-center set-width">
+                                        <span class="input-group-btn">
+                                            <a class="btn btn-info-outline" type="submit">
+                                                <img src="images\icon-trash.png">
+                                            </a>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked>
+                                    </td>
+                                    <td class="text-center strike">
+                                        apple
+                                    </td>
+                                    <td>
+                                        <span class="input-group-btn">
+                                            <a class="btn btn-info-outline" type="submit">
+                                                <img src="images//icon-trash.png">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="text-center">
+                                        orange
+                                    </td>
+                                    <td>
+                                        <span class="input-group-btn">
+                                            <a class="btn btn-info-outline" type="submit">
+                                                <img src="images//icon-trash.png">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section section-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h1>Tell someone!</h1>
+                        <ul class="list-group">
+                            <li class="list-group-item">Take a picture, and post on Instagram!</li>
+                            <li class="list-group-item">Share with others, and tweet about your great find!</li>
+                            <li class="list-group-item">Share with your family and friends on Facebook!</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-center">
+                                <a href="instagram.com"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="twitter.com"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="facebook.com"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="http://www.instagram.com"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="http://www.twitter.com"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="http://www.facebook.com"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
