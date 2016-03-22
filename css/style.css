@@ -1,4 +1,6 @@
-Basic rules to write CSS - write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer) - write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above */
+/*Basic rules to write CSS - write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer) - write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above */
+
+
 /* -------------------------------------
 CSS reset
 (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
@@ -65,6 +67,10 @@ Content styles (Main Module)
     height: 20px;
 }
 
+.btn-info-outline img {
+    height: 20px;
+}
+
 .alert-wrap {
     display: none;
 }
@@ -73,12 +79,8 @@ Content styles (Main Module)
     display: none;
 }
 
-.hide-shop-list {
-    display: none;
-}
-
 .set-width {
-    width: 5%;
+    width: 2%;
 }
 
 .strike {
@@ -91,10 +93,37 @@ Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
 
+footer .list-group-item {
+    color: #337AB7;
+}
+
 
 /* -------------------------------------
-place all the desktop styles above this line
+Desktop styles above this line
 Responsive styles
-(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
-place all the mobile tables styles bellow this line
 */
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+    footer h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
